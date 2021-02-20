@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Header(props) {
     return (
             <header className='hero-container'>
-                <video src={'https://lfranckx.github.io/portfolio/videos/video-1.mp4'} autoPlay loop muted />
+                <video src={`${process.env.PUBLIC_URL}/videos/video-1.mp4`} autoPlay loop muted />
                 <h1>I am Lachlan, a
                     <Typical
                         className={"typical"}
