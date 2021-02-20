@@ -1,49 +1,80 @@
-.contact-container {
+@import './vars';
+
+main#contact {
     text-align: center;
     display: block;
 
-}
+    h1 {
+        margin-bottom: 1rem;
+    }
 
-.contact-form {
-    display: inline-block;
-}
+    form {
+        display: inline-block;
+        // max-width: $Large;
+        // min-width: $Small;
 
-.contact-input {
-    color: #242424;
-    padding: 10px;
-}
+        div.name-and-email {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-between;
 
-.contact-form label, .contact-form input {
-    font-size: 2rem;
-}
+            .form-input {
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
 
-.name-and-email {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+                label {
+                    text-align: left;
+                }
 
-.phone input {
-    max-width: 250px;
-}
+                input {
+                    width: 100%;
+                }
+            }
+        }
 
-.form-input {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
+        div.form-input {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            text-align: left;
 
-.form-input label {
-    text-align: left;
-}
+            label, input, textarea {
+                font-size: 1.4rem;
+                margin: 5px;
+            }
 
-.form-input textarea {
-    font-size: 1.5rem;
-}
+            input, textarea {
+                color: $black;
+                padding: 10px;
+            }
+        }
 
-.submit {
-    color: #242424;
-    font-size: 1.4rem;
-    margin-top: 30px;
-}
+        .phone {
+            input {
+                max-width: 265px;
+            }
+        }   
 
+        .submit {
+            font-size: 1.4rem;
+            margin-top: 30px;
+            background-color: $charcoal;
+            color: $white;
+            transition: all 0.2s ease-out;
+
+            i {
+                color: $white;
+                transition: all 0.2s ease-out;
+                font-size: 1.4rem;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: $queen-blue;
+                transition: all 0.2s ease-out;
+            }
+        }
+    }
+}

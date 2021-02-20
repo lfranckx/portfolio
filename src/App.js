@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 import Home from './components/pages/Home/Home';
 import Portfolio from './components/pages/Portfolio';
 import Resume from './components/pages/Resume';
-import Contact from './components/pages/Contact';
+import Contact from './components/pages/Contact/Contact';
 import About from "./components/pages/About";
 
 function App() {
