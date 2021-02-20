@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8653d7ac.chunk.css",
-    "main.js": "/portfolio/static/js/main.ccaa509a.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.ccaa509a.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.8fed2963.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.8fed2963.js.map",
-    "static/css/2.cc77c331.chunk.css": "/portfolio/static/css/2.cc77c331.chunk.css",
-    "static/js/2.6415e4cc.chunk.js": "/portfolio/static/js/2.6415e4cc.chunk.js",
-    "static/js/2.6415e4cc.chunk.js.map": "/portfolio/static/js/2.6415e4cc.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "static/css/2.cc77c331.chunk.css.map": "/portfolio/static/css/2.cc77c331.chunk.css.map",
-    "static/css/main.8653d7ac.chunk.css.map": "/portfolio/static/css/main.8653d7ac.chunk.css.map",
-    "static/js/2.6415e4cc.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6415e4cc.chunk.js.LICENSE.txt"
+    "main.css": "https://lfranckx.github.io/portfolio/static/css/main.8653d7ac.chunk.css",
+    "main.js": "https://lfranckx.github.io/portfolio/static/js/main.3c2c4839.chunk.js",
+    "main.js.map": "https://lfranckx.github.io/portfolio/static/js/main.3c2c4839.chunk.js.map",
+    "runtime-main.js": "https://lfranckx.github.io/portfolio/static/js/runtime-main.74cbd9e3.js",
+    "runtime-main.js.map": "https://lfranckx.github.io/portfolio/static/js/runtime-main.74cbd9e3.js.map",
+    "static/css/2.cc77c331.chunk.css": "https://lfranckx.github.io/portfolio/static/css/2.cc77c331.chunk.css",
+    "static/js/2.6415e4cc.chunk.js": "https://lfranckx.github.io/portfolio/static/js/2.6415e4cc.chunk.js",
+    "static/js/2.6415e4cc.chunk.js.map": "https://lfranckx.github.io/portfolio/static/js/2.6415e4cc.chunk.js.map",
+    "index.html": "https://lfranckx.github.io/portfolio/index.html",
+    "static/css/2.cc77c331.chunk.css.map": "https://lfranckx.github.io/portfolio/static/css/2.cc77c331.chunk.css.map",
+    "static/css/main.8653d7ac.chunk.css.map": "https://lfranckx.github.io/portfolio/static/css/main.8653d7ac.chunk.css.map",
+    "static/js/2.6415e4cc.chunk.js.LICENSE.txt": "https://lfranckx.github.io/portfolio/static/js/2.6415e4cc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8fed2963.js",
+    "static/js/runtime-main.74cbd9e3.js",
     "static/css/2.cc77c331.chunk.css",
     "static/js/2.6415e4cc.chunk.js",
     "static/css/main.8653d7ac.chunk.css",
-    "static/js/main.ccaa509a.chunk.js"
+    "static/js/main.3c2c4839.chunk.js"
   ]
 }
