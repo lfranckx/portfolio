@@ -2,6 +2,24 @@ import React from "react";
 import '../../../styles/Contact.scss';
 import Footer from "../../Footer";
 
+const API_ENDPOINT = "";
+const ApiService = {
+    sendEmail(data) {
+        return fetch(`${API_ENDPOINT}/email`, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res => 
+            (!res.ok)
+                ? res.json().then(e => Promise.reject(e))
+                : res.json()
+        );
+    }
+}
+
 const formatPhoneNumber = (value, previousValue) => {
     //return nothing if no value
     if (!value) return value;
@@ -29,7 +47,7 @@ export default class Contact extends React.Component {
 
     constructor() {
         super();
-        this.state = { phone: "" };
+        this.state = { error: null, phone: "" };
         this.handleChange = this.handleChange.bind(this);
     }
 
@@ -40,14 +58,34 @@ export default class Contact extends React.Component {
     handleSubmitEmail = ev => {
         ev.preventDefault();
         const { name, email, phone, message } = ev.target;
+        const data = {
+            name: name,
+            email: email,
+            phone: phone,
+            message: message
+        }
+        ApiService.sendEmail(data)   
+        .then(res => {
+            name.value = '',
+            email.value = '',
+            phone.value = '',
+            message.value = ''
+        })     
+        .catch(res => {
+            this.setState({ error: res.error });
+        });
     }
 
     render () {
+        const { error } = this.state;
         return (
             <>
                 <main id="contact" className={'container'}>
                     <h1 className={'h2'}>Contact Me</h1>
                     <form className={'margin-auto'}>
+
+                        <div role='alert'>{error && <p className='error'>{error}</p>}</div>
+
                         <div className={'flex name-and-email'}>
                             
                             <div className={'form-input name'}>
