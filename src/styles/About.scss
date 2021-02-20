@@ -1,0 +1,49 @@
+@import './vars';
+
+.about-page {
+    background-color: #242424;
+    padding: 2rem;
+
+    div {
+
+        h2 {
+            text-align: center;
+            font-family: 'PT Sans', sans-serif;
+            color: $dark-sky-blue;
+        }
+        
+        div.about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+
+            section  {
+                p {
+                    line-height: 1.6;
+                    font-size: 1.6rem;
+                    font-weight: 2;
+                    color: aliceblue;
+                }
+            }
+        }
+
+        section.about-skills {
+            h3 {
+                font-size: 3rem;
+                margin: 2rem;
+                color: $alice-blue;
+            }
+
+            div.skills-list {
+                display: flex;
+                justify-content: center;
+                justify-content: space-around;
+                font-size: 3rem;
+            }
+        }
+
+  
+    }
+}
+

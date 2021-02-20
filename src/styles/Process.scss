@@ -1,0 +1,146 @@
+@import './vars';
+
+#process {
+    background-color: $alice-blue;
+    padding: 2rem 12rem;
+
+    section {
+        h2 {
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Geneva,Verdana,"Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+            color: $black;
+        }
+
+        .bottom-line {
+            border-bottom: solid 2px $black;
+        }
+
+        h3 {
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Geneva,Verdana,"Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+            font-weight: 300;
+            padding-bottom: 2rem;
+            color: $black;
+        }
+
+        #timeline {
+            background: $black;
+            padding: 0 2rem ;
+
+            ul {
+                // Timeline branch
+                li {
+                    list-style: none;
+                    position: relative;
+                    width: 6px;
+                    margin: 0 auto;
+                    padding: 2rem 0 0 0;
+                    background: $alice-blue;
+
+                    .card {
+                        position: relative;
+                        bottom: 0;
+                        top: 12px;
+                        width: 400px;
+                        padding: 1rem;
+                        transition: all 0.5s ease-in-out;
+                        background: $dark-grey;
+                        border: solid 5px $carolina-blue;
+
+                        div {
+                            svg {
+                                margin: 0 1rem;
+                                font-size: $font3rem;
+                                color: $black;
+                            }
+                        }
+
+                        h3 {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 0;
+                            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Geneva,Verdana,"Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+                            font-size: $font1-6rem;
+                            font-weight: 500;
+                            color: $carolina-blue;
+                        }
+
+                        p {
+                            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Geneva,Verdana,"Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+                            font-weight: 300;
+                            color: $white;
+                            font-size: $font1-2rem;
+                        }
+
+                        /* ARROW STYLE */
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            bottom: 8px;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                        }
+
+
+                    }
+
+                    /* DOTS STYLE */
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        width: 20px;
+                        height: 20px;
+                        background: $orange-web;
+                        transform: translateX(-50%);
+                        border-radius: 50%;
+                    }
+
+                    /* Right Side Boxes */
+                    &:nth-child(odd) {
+                        div {
+                            left: 40px;
+                        }
+                    }
+                    /* Right Side Arrows */
+                    &:nth-child(odd) div:before {
+                        left: -21px;
+                        border-width: 8px 16px 8px 0;
+                        border-color: transparent $carolina-blue transparent transparent;
+                    }
+
+                    /* Left Side Boxes */
+                    &:nth-child(even) div {
+                        left: -434px;
+                    }
+                    /* Left Side Arrows */
+                    &:nth-child(even) div:before {
+                        right: -21px;
+                        border-width: 8px 0px 8px 16px;
+                        border-color: transparent transparent transparent $carolina-blue;
+                    }
+
+                    // Last Box
+                    &:last-child {
+                        padding: 3rem 0 3rem 0;
+                    }
+
+                    &:last-child:after {
+                        bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $Large) {
+    #process {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: $Medium) {
+
+}

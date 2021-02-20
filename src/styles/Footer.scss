@@ -1,0 +1,36 @@
+@import './vars';
+
+footer {
+    background: $gradient-black;
+    padding: 1rem;
+
+    div.footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #copyright {
+            p {
+                margin: 10px;
+            }
+        }
+        
+        #contact-links {
+            a {
+                margin: 0 1rem;
+
+                &:first-child i {
+                    font-size: 1.5rem;
+                }
+
+                i {
+                    font-size: 1.8rem;
+
+                    &:hover {
+                        color: $queen-blue;
+                    }
+                }
+            }
+        }
+    }
+}

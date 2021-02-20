@@ -1,0 +1,120 @@
+@import './vars';
+
+.resume-page {
+    background-color: $black;
+
+    div {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .resume-container {
+        text-align: left;
+        color: #fff;
+        max-width: 1080px;
+        margin: 0 auto;
+
+        .download-resume {
+            text-align: left;
+            padding: 1rem 0 0 2rem;
+        }
+
+        h3, h4, a, p, li{
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Geneva,Verdana,"Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+        }
+
+        p {
+            font-weight: 300;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        h4 {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            margin: 5px 0;
+        }
+
+        a {
+            //color: #4fe6ff;
+            //color: $celeste;
+            color: $carolina-blue;
+        }
+
+        .large-text {
+            //font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 2rem;
+            border-bottom: solid 1px grey;
+
+
+            .workout-app {
+                margin-top: 2rem;
+            }
+        }
+
+
+        .resume-contact{
+            padding: 1rem 2rem 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            justify-content: space-between;
+
+            i {
+                color: #fff;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+#accordion {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.resume-experience {
+    padding: 2rem;
+}
+
+.arrow {
+    background-color: #242424;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    outline: none;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.rotate {
+    transform: rotate(90deg);
+    transition: transform 0.6s ease;
+}
+
+.hide {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.6s ease, padding 0.6s ease;
+}
+
+.show {
+    height: fit-content;
+    transition: height 0.6s ease, padding 0.6s ease;
+}

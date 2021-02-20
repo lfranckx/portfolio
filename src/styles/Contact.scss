@@ -1,0 +1,49 @@
+.contact-container {
+    text-align: center;
+    display: block;
+
+}
+
+.contact-form {
+    display: inline-block;
+}
+
+.contact-input {
+    color: #242424;
+    padding: 10px;
+}
+
+.contact-form label, .contact-form input {
+    font-size: 2rem;
+}
+
+.name-and-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.phone input {
+    max-width: 250px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.form-input label {
+    text-align: left;
+}
+
+.form-input textarea {
+    font-size: 1.5rem;
+}
+
+.submit {
+    color: #242424;
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+
