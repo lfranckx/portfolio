@@ -47,7 +47,7 @@ export default class Contact extends React.Component {
 
     constructor() {
         super();
-        this.state = { error: null, phone: "" };
+        this.state = { error: null, success: null, phone: "" };
         this.handleChange = this.handleChange.bind(this);
     }
 
@@ -66,10 +66,11 @@ export default class Contact extends React.Component {
         }
         ApiService.sendEmail(data)   
         .then(res => {
-            name.value = '',
-            email.value = '',
-            phone.value = '',
-            message.value = ''
+            name.value = '';
+            email.value = '';
+            phone.value = '';
+            message.value = '';
+            this.setState({ success: res.success})
         })     
         .catch(res => {
             this.setState({ error: res.error });
@@ -83,9 +84,6 @@ export default class Contact extends React.Component {
                 <main id="contact" className={'container'}>
                     <h1 className={'h2'}>Contact Me</h1>
                     <form className={'margin-auto'}>
-
-                        <div role='alert'>{error && <p className='error'>{error}</p>}</div>
-
                         <div className={'flex name-and-email'}>
                             
                             <div className={'form-input name'}>
@@ -143,6 +141,9 @@ export default class Contact extends React.Component {
                             <i className="fas fa-paper-plane"></i>
                             &nbsp; Send
                         </button>
+
+                        <div role='alert'>{error && <p className='error'>{error}</p>}</div>
+                        <div role='alert'>{success && <p className='success'>{success}</p>}</div>
                     </form>
                 </main>
                 <Footer />
