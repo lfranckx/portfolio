@@ -6,10 +6,10 @@
 
     div {
 
-        h2 {
+        h1 {
             text-align: center;
             font-family: 'PT Sans', sans-serif;
-            color: $dark-sky-blue;
+            color: $sky-blue;
         }
         
         div.about-container {
@@ -21,18 +21,17 @@
             section  {
                 p {
                     line-height: 1.6;
-                    font-size: 1.6rem;
+                    font-size: 1.4rem;
                     font-weight: 2;
-                    color: aliceblue;
+                    color: $alice-blue;
                 }
             }
         }
 
         section.about-skills {
-            h3 {
-                font-size: 3rem;
+            h2 {
                 margin: 2rem;
-                color: $alice-blue;
+                color: $sky-blue;
             }
 
             div.skills-list {

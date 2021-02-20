@@ -23,8 +23,8 @@ export default function Process() {
                                 animateOnce={true}
                             >
                                 <div className={'card'}>
-                                    <div><GiTalk /></div>
-                                    <h3 className={'h3 margin-bottom'}>Discuss</h3>
+                                    <div className={'h1'}><GiTalk /></div>
+                                    <h3>Discuss</h3>
                                     <p className={'h4'}>Meet with client and discuss project needs and desired design.</p>
                                 </div>
                             </ScrollAnimation>
@@ -37,8 +37,8 @@ export default function Process() {
                                 animateOnce={true}
                             >
                                 <div className={'card'}>
-                                    <div><MdPhotoSizeSelectSmall className={'card-icon'}/></div>
-                                    <h3 className={'h3 margin-bottom'}>Design Wireframes</h3>
+                                    <div className={'h1'}><MdPhotoSizeSelectSmall className={'card-icon'}/></div>
+                                    <h3>Design Wireframes</h3>
                                     <p className={'h4'}>Create wireframes based on the conversation so the client can see what the project would look like when finished.</p>
                                 </div>
                             </ScrollAnimation>
@@ -51,8 +51,8 @@ export default function Process() {
                                 animateOnce={true}
                             >
                                 <div className={'card'}>
-                                    <div><FaCode className={'card-icon'}/></div>
-                                    <h3 className={'h3 margin-bottom'}>Write Code</h3>
+                                    <div className={'h1'}><FaCode className={'card-icon'}/></div>
+                                    <h3>Write Code</h3>
                                     <p className={'h4'}>Write functional code while remaining in communication with the client at each step to make sure their needs haven't changed.</p>
                                 </div>
                             </ScrollAnimation>
@@ -66,7 +66,7 @@ export default function Process() {
                             >
                                 <div className={'card'}>
                                     <div className={'h1'}><MdDevices className={'card-icon'}/></div>
-                                    <h3 className={'h3 margin-bottom'}>Make Responsive</h3>
+                                    <h3>Make Responsive</h3>
                                     <p className={'h4'}>Make sure the website or application is responsive on all of the devices of the user audience.</p>
                                 </div>
                             </ScrollAnimation>
@@ -80,7 +80,7 @@ export default function Process() {
                             >
                                 <div className={'card'}>
                                     <div className={'h1'}><i className="far fa-calendar-check h1"></i></div>
-                                    <h3 className={'h3 margin-bottom'}>Deliver Project</h3>
+                                    <h3>Deliver Project</h3>
                                     <p className={'h4'}>Deliver the final product on time and with the approval of the client.</p>
                                 </div>
                             </ScrollAnimation>

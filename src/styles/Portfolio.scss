@@ -7,7 +7,12 @@
 
     section.professional {
         margin: auto;
-        max-width: 1000px;
+        max-width: $Largest;
+
+        h1 {
+            // color: $sky-blue;
+        }
+
         div.professional-projects {
             a {
                 img {
@@ -33,7 +38,8 @@
 
             h3 {
                 margin-top: 2rem;
-                color: $carolina-blue;
+                // color: $carolina-blue;
+                color: $sky-blue;
             }
 
             div.skills-list {
@@ -73,8 +79,6 @@
                     position: relative;
                     background-color: $charcoal;
                     overflow: hidden;
-                    // max-height: 500px;
-                    // max-width: 500px;
 
                     &::after {
                         content: "";

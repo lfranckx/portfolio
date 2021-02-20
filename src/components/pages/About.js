@@ -13,7 +13,7 @@ export default function About() {
         <>
             <main className={'about-page'}>
                 <div className={'narrow'}>
-                    <h2 className={'h2'}>"The best preparation for tomorrow is doing your best today."</h2>
+                    <h1 className={'h2'}>"The best preparation for tomorrow is doing your best today."</h1>
                     <div className={'top-line'}></div>
                     <div className={'about-container'}>
                         <section id={'about'}>
@@ -39,7 +39,7 @@ export default function About() {
                     </div>
 
                     <section className={'text-center about-skills'}>
-                        <h3>Skills</h3>
+                        <h2 className='h1'>Skills</h2>
                         <div className={'skills-list'}>
                             <i className="fab fa-js-square"></i>
                             <SiJquery />

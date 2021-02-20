@@ -2,7 +2,7 @@
 
 #process {
     background-color: $alice-blue;
-    padding: 2rem 12rem;
+    padding: 2rem;
 
     section {
         h2 {
@@ -23,7 +23,8 @@
 
         #timeline {
             background: $black;
-            padding: 0 2rem ;
+            max-width: $Large;
+            margin: auto;
 
             ul {
                 // Timeline branch
@@ -40,14 +41,14 @@
                         bottom: 0;
                         top: 12px;
                         width: 400px;
-                        padding: 1rem;
+                        padding: 1rem 1rem 2rem;
                         transition: all 0.5s ease-in-out;
                         background: $dark-grey;
                         border: solid 5px $carolina-blue;
 
-                        div {
+                        div.h1 {
+                            margin-bottom: -5px;
                             svg {
-                                margin: 0 1rem;
                                 font-size: $font3rem;
                                 color: $black;
                             }
@@ -59,16 +60,17 @@
                             justify-content: center;
                             padding: 0;
                             font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Geneva,Verdana,"Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-                            font-size: $font1-6rem;
+                            font-size: 1.6rem;
                             font-weight: 500;
                             color: $carolina-blue;
+                            margin-bottom: 10px;
                         }
 
                         p {
                             font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Geneva,Verdana,"Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
                             font-weight: 300;
                             color: $white;
-                            font-size: $font1-2rem;
+                            font-size: 1.2rem;
                         }
 
                         /* ARROW STYLE */
@@ -124,6 +126,10 @@
                     // Last Box
                     &:last-child {
                         padding: 3rem 0 3rem 0;
+
+                        div.h1 {
+                            margin-bottom: 0;
+                        }
                     }
 
                     &:last-child:after {

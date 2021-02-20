@@ -16,7 +16,7 @@ export default function Portfolio(props) {
 
                     <div className='professional-projects'>
                         <a href='https://www.omgartistry.com/' target="_blank" rel="noreferrer noopener">
-                            <img src="https://lfranckx.github.io/portfolio/images/omglogo.png" alt='omg-artistry' className='project-image'/>
+                            <img src={`${process.env.PUBLIC_URL}/images/omglogo.png`} alt='omg-artistry' className='project-image'/>
                         </a>
                         <p className='click'>Click image to view</p>
                         <div className='top-line'></div>
@@ -65,7 +65,7 @@ export default function Portfolio(props) {
                             <a href='https://travelog-client.now.sh/' target="_blank" rel="noreferrer noopener">
                                 <div className='project'> 
 
-                                    <img src="https://lfranckx.github.io/portfolio/images/travelog.png" alt='Travelog' className='project-image'/>
+                                    <img src={`${process.env.PUBLIC_URL}/images/travelog.png`} alt='Travelog' className='project-image'/>
 
                                     <div className='project-text'>
                                         <div className='text-wrap'>
@@ -87,7 +87,7 @@ export default function Portfolio(props) {
                             <a href='https://workout-creator-capstone-client.vercel.app/' target="_blank" rel="noreferrer noopener">
                                 <div className='project'>
                                     
-                                    <img src="https://lfranckx.github.io/portfolio/images/MyMetcon.png" alt='MyMetcon' className='project-image'/>
+                                    <img src={`${process.env.PUBLIC_URL}/images/MyMetcon.png`} alt='MyMetcon' className='project-image'/>
 
                                     <div className='project-text'>
                                         <div className='text-wrap'>
@@ -109,7 +109,7 @@ export default function Portfolio(props) {
                             <a href='https://lfranckx.github.io/tourBus/' target="_blank" rel="noreferrer noopener">
                                 <div className='project'>
 
-                                    <img src="https://lfranckx.github.io/portfolio/images/TourBus.png" alt='TourBus' className='project-image'/>
+                                    <img src={`${process.env.PUBLIC_URL}/images/TourBus.png`} alt='TourBus' className='project-image'/>
 
                                     <div className='project-text'>
                                         <div className='text-wrap'>
@@ -130,7 +130,7 @@ export default function Portfolio(props) {
                             <a href='https://lfranckx.github.io/drum-machine/' target="_blank" rel="noreferrer noopener">
                                 <div className='project'>
                                     
-                                    <img src="https://lfranckx.github.io/portfolio/images/DrumMachine.png" alt='DrumMachine' className='project-image'/>
+                                    <img src={`${process.env.PUBLIC_URL}/images/DrumMachine.png`} alt='DrumMachine' className='project-image'/>
                                     
                                     <div className='project-text'>
                                         <div className='text-wrap'>
