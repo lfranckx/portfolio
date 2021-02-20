@@ -136,7 +136,7 @@ export default function Portfolio(props) {
                                         <div className='text-wrap'>
                                             <h3>Drum Machine</h3>
                                             <h4 className='h4'>Website App</h4>
-                                            <p>A fun way for anyone to play drums with the tap of key!</p>
+                                            <p>A fun way for anyone to play drums with the tap of a key!</p>
                                             <div>
                                                 <i className="fab fa-js-square"></i>
                                                 <i className="fab fa-html5"></i>

@@ -78,7 +78,7 @@ export default class Contact extends React.Component {
     }
 
     render () {
-        const { error } = this.state;
+        const { error, success } = this.state;
         return (
             <>
                 <main id="contact" className={'container'}>
