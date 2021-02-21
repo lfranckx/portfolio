@@ -28,7 +28,24 @@ footer {
 
                     &:hover {
                         color: $queen-blue;
+                        // color: #0072b1;
+                        // color: #90d6ff;
                     }
+                }
+
+                .fa-linkedin:hover {
+                    color: #0072b1;
+                }
+
+                .fa-facebook-f:hover {
+                    color: #4267B2;
+                }
+
+                .fa-instagram:hover {
+                    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
         }

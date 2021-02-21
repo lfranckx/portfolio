@@ -1,6 +1,8 @@
 import React from "react";
 import '../../../styles/Process.scss';
-import { GiTalk, MdPhotoSizeSelectSmall, FaCode, MdDevices } from "react-icons/all";
+import { FaCode } from 'react-icons/fa';
+import { GiTalk } from 'react-icons/gi';
+import { MdPhotoSizeSelectSmall, MdDevices } from 'react-icons/md';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
 
