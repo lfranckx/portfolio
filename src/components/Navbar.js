@@ -12,7 +12,7 @@ export default function Header(props) {
         <div id="navbar">
             <nav>
                 <Link to={'/home'} id="logo-name">
-                    LFX Media
+                    Lachlan Franckx
                 </Link>
 
                 <div id='hamburger' onClick={handleClick}>
