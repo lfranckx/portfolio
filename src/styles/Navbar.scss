@@ -1,7 +1,7 @@
 @import "./vars";
 
 #navbar {
-  background: $gradient-black;
+  background: $background;
   position: sticky;
 	top: 0;
 	left: 0;
@@ -47,13 +47,13 @@
           }
 
           &.selected {
-            border-bottom: 4px solid $white;
+            border-bottom: 4px solid $hover;
             transition: all 0.2s ease-out;
           }
         }
 
         &:last-child > a {
-          border: 1px solid $white;
+          border: 1px solid $text;
           border-radius: 2px;
           padding: 8px 20px;
           font-size: 1.2rem;
@@ -61,8 +61,8 @@
         }
 
         &:last-child > a:hover {
-          background-color: $white;
-          color: $black;
+          background-color: $hover;
+          color: $hover;
           transition: all 0.3s ease-out;
           transition: 250ms;
         }

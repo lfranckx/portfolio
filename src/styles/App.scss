@@ -1,3 +1,5 @@
+@import './vars';
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +9,7 @@
   // 'Lucida Sans', Arial, sans-serif;
   // font-family: 'europa', sans-serif;
   font-family: 'Varela Round', sans-serif;
-  color: #fff;
+  color: $text;
 }
 
 h1, h2, h3, h3, h4, h5, ul, li, p, div {
