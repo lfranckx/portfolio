@@ -10,8 +10,6 @@ main#contact {
 
     form {
         display: inline-block;
-        // max-width: $Large;
-        // min-width: $Small;
 
         div.name-and-email {
             display: flex;
@@ -46,7 +44,6 @@ main#contact {
             }
 
             input, textarea {
-                color: $black;
                 padding: 10px;
             }
         }
@@ -60,19 +57,15 @@ main#contact {
         .submit {
             font-size: 1.4rem;
             margin-top: 30px;
-            background-color: $charcoal;
-            color: $white;
             transition: all 0.2s ease-out;
 
             i {
-                color: $white;
                 transition: all 0.2s ease-out;
                 font-size: 1.4rem;
             }
 
             &:hover {
                 cursor: pointer;
-                background-color: $queen-blue;
                 transition: all 0.2s ease-out;
             }
         }

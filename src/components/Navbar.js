@@ -59,7 +59,7 @@ export default function Header(props) {
                     <li>
                         <NavLink to='/contact'
                             activeClassName={"selected"}
-                            className='navlinks-contact'
+                            className='navlinks'
                             onClick={closeMobileMenu}
                         >
                             Contact

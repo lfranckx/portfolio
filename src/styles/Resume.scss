@@ -1,7 +1,6 @@
 @import './vars';
 
 .resume-page {
-    background-color: $black;
 
     div {
         font-size: 1.2rem;
@@ -35,12 +34,6 @@
             font-size: 1.6rem;
             line-height: 1.5;
             margin: 5px 0;
-        }
-
-        a {
-            //color: #4fe6ff;
-            //color: $celeste;
-            color: $carolina-blue;
         }
 
         .large-text {

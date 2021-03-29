@@ -115,25 +115,13 @@
 }
 
 .top-line {
-    border-top: 2px $alice-blue solid;
-    width: 4rem;
-    margin: 2rem auto;
-}
-
-.bottom-line {
-    border-bottom: 2px $alice-blue solid;
+    border-top: 2px $text solid;
     width: 4rem;
     margin: 2rem auto;
 }
 
 .top-line-large {
-    border-top: 2px $alice-blue solid;
-    max-width: 1000px;
-    margin: 2rem auto;
-}
-
-.bottom-line-large {
-    border-top: 2px $alice-blue solid;
+    border-top: 2px $text solid;
     max-width: 1000px;
     margin: 2rem auto;
 }
@@ -145,5 +133,5 @@
 }
 
 .blue {
-    color: $carolina-blue;
+    // color: $carolina-blue;
 }

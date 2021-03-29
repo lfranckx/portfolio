@@ -1,74 +1,61 @@
 @import "./vars";
 
 #navbar {
-  background: $background;
-  position: sticky;
-	top: 0;
-	left: 0;
-	width: 100%;
-  z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1.5rem;
-    height: 80px;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.5rem;
+        height: 80px;
+        border: $border solid 2px;
+        border-radius: 4px;
+        width: 94%;
+        margin: auto;
 
-    #logo-name {
-      font-size: 2rem;
-      padding-left: 10px;
-    }
-
-    #hamburger {
-      display: none;
-    }
-
-    ul {
-      display: flex;
-      align-items: center;
-
-      li {
-        display: grid;
-        grid-template-columns: repeat(4, auto);
-        grid-gap: 10px;
-
-        .navlinks {
-          font-size: 1.2rem;
-          padding: 0.5rem 1rem;
-          height: 70px;
-          display: flex;
-          align-items: center;
-          transition: all 0.2s ease-out;
-
-          &:hover {
-            transform: translateY(-4px);
-            transition: all 0.2s ease-out;
-          }
-
-          &.selected {
-            border-bottom: 4px solid $hover;
-            transition: all 0.2s ease-out;
-          }
+        #logo-name {
+        font-size: 1.8rem;
+        padding-left: 10px;
         }
 
-        &:last-child > a {
-          border: 1px solid $text;
-          border-radius: 2px;
-          padding: 8px 20px;
-          font-size: 1.2rem;
-          transition: all 0.2s ease-out;
+        #hamburger {
+        display: none;
         }
 
-        &:last-child > a:hover {
-          background-color: $hover;
-          color: $hover;
-          transition: all 0.3s ease-out;
-          transition: 250ms;
+        ul {
+        display: flex;
+        align-items: center;
+
+            li {
+                display: grid;
+                grid-template-columns: repeat(4, auto);
+                grid-gap: 10px;
+
+                .navlinks {
+                  font-size: 1rem;
+                  height: 70px;
+                  display: flex;
+                  align-items: center;
+                  transition: all 0.2s ease-out;
+
+                  &:hover {
+                      color: $button;
+                      transition: all 0.2s ease-out;
+                  }
+
+                  &.selected {
+                      border-bottom: .15rem solid $button;
+                      transition: all 0.2s ease-out;
+                  }
+                }
+            }
         }
-      }
     }
-  }
 }
 
 @media screen and (max-width: $Medium) {
@@ -97,7 +84,6 @@
         transition: all 0.5s ease;
   
         &.active {
-          background: $black2;
           left: 0;
           opacity: 1;
           transition: all 0.5s ease;
@@ -121,37 +107,19 @@
             justify-content: center;
             width: 80%;
             border-radius: 4px;
-            border: 1px solid $white;
+            border: 1px solid $border;
             background: transparent;
             font-size: 1.5rem;
             margin: auto;
 
             &:hover {
-              background-color: $white;
-              color: $black;
               transform: none;
             }
 
             &.selected {
               border-bottom: none;
               transition: all 0.2s ease-out;
-              background: $white;
-              color: $black;
             }
-          }
-
-          &:last-child > a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 80%;
-            border-radius: 4px;
-            border: 1px solid $white;
-            background: transparent;
-            font-size: 1.5rem;
-            margin: auto;
-            padding: 0.5rem 1rem;
-            height: 70px;
           }
         }
       }

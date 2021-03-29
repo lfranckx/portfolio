@@ -1,8 +1,10 @@
 @import './vars';
 
 footer {
-    background: $gradient-black;
     padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
     div.footer-container {
         display: flex;
@@ -27,9 +29,7 @@ footer {
                     font-size: 1.8rem;
 
                     &:hover {
-                        color: $queen-blue;
-                        // color: #0072b1;
-                        // color: #90d6ff;
+                        
                     }
                 }
 

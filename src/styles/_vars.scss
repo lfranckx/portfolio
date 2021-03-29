@@ -1,63 +1,10 @@
 // Design 2 
 $background: #fff;
 $text: #63707e;
-$hover: #1DAA9C;
+$button: #1DAA9C;
 $border: #f5f6f7;
+$black: black;
 
-
-// Design 1
-// Main colors
-$white: #fff;
-$black: #242424;
-$black2: #242222;
-$grey: #dcdcdc;
-$dark-grey: #2f2e2d;
-$color1: rgba(88, 75, 83, 1);
-$gradient-black: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-
-// Color Scheme 1
-$orange-web: rgba(255, 164, 0, 1);
-$carolina-blue: rgba(0, 159, 253, 1);
-$st-patricks-blue: rgba(42, 42, 114, 1);
-$raisin-black: rgba(35, 37, 40, 1);
-$alice-blue: rgba(234, 246, 255, 1);
-$ice-blue: #b4dfff;
-$sky-blue: #53b5ff;
-
-//// Color Scheme 2
-$queen-blue: #33658aff;
-$dark-sky-blue: #86bbd8ff;
-$moss-green: #758e4fff;
-$honey-yellow: #f6ae2dff;
-$safety-orange-blaze-orange: #f26419ff;
-
-////// Color Scheme 3
-$aquamarine: rgba(165, 255, 214, 1);
-$middle-grey: rgba(129, 127, 117, 1);
-$gray-x-11-gray: rgba(179, 181, 187, 1);
-$columbia-blue: rgba(197, 217, 226, 1);
-$celeste: #77ffef;
-
-///* Color Scheme 4 */
-$melon: rgba(243, 179, 166, 1);
-$rosy-brown: rgba(185, 139, 130, 1);
-$mauvelous: rgba(228, 149, 158, 1);
-$charcoal: rgba(55, 81, 95, 1);
-$charcoal-light: #455e6b;
-$xiketic: rgba(31, 8, 18, 1);
-
-/* Color Scheme 5 */
-$desert-sand: rgba(236, 200, 175, 1);
-$melon: rgba(231, 173, 153, 1);
-$new-york-pink: rgba(206, 121, 107, 1);
-$persian-orange: rgba(193, 140, 93, 1);
-$black-coral: rgba(73, 88, 103, 1);
-$pink: #F8CACA;
-
-// Font Sizes
-$font3rem: 3rem;
-$font1-6rem: 1.6rem;
-$font1-2rem: 1.2rem;
 
 // Media Sizes
 $Largest: 1320px;
@@ -65,9 +12,3 @@ $Large: 1082px;
 $Medium: 950px;
 $Small: 800px;
 $Smallest: 600px;
-
-@media screen and (max-width: $Medium) {
-  $font3rem: 2.25rem;
-  $font1-6rem: 1.2rem;
-  $font1-2rem: 0.9rem;
-}
